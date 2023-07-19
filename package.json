@@ -2,7 +2,7 @@
   "name": "todo-react-api",
   "version": "1.0.0",
   "description": "REST basic API for list task app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,8 @@
   "author": "Jaime Herrera",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0"
   }
 }
