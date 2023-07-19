@@ -7,9 +7,26 @@ router.get("/", async (req, res) => {
   try {
     let collection = await database.collection("task");
     let results = await collection.find({}).limit(50).toArray();
-    res.send(results).status(200);
+    if (!results) {
+      res.status(404).send("Records Not Found");
+    }
+    res.status(200).send(results);
   } catch (error) {
-    res.send("Records Not Found").status(404);
+    res.status(500).send("Couldn't Create New Record, Something Went Wrong");
+  }
+});
+
+router.post("/", async (req, res) => {
+  try {
+    let collection = await database.collection("task");
+    const task = req.body;
+    if (!task) {
+      res.status(400).send("Couldn't Create New Record, Invalid Request Body");
+    }
+    await collection.insertOne(task);
+    res.status(204).send("Record Created Successfully");
+  } catch (error) {
+    res.status(500).send("Couldn't Create New Record, Something Went Wrong");
   }
 });
 
