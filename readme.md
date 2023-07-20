@@ -31,7 +31,7 @@ REST API with Express and MongoDB.
 
 In order to execute the application the following steps are necessary:
 
-1. Install node.js dependencies. Make sure to execute this command in the project root directoty.
+1. Install node.js dependencies. Make sure to execute this command in the project root directory.
 
    ```bash
    $ npm install
