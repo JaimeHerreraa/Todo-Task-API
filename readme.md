@@ -6,14 +6,12 @@ REST API with Express and MongoDB.
 
 ```bash
 |- node_modules
-|
 |- src
 |   |- db
 |   |  |- database.js
 |   |- routes
 |   |  |- task.js
 |   |- server.js
-|
 |- .env
 |- .gitignore
 |- package-lock.json
@@ -43,7 +41,7 @@ In order to execute the application the following steps are necessary:
    DB_CONNECTION="database conexion string goes here"
    ```
 
-3. Turn on MongoDB Server. Documentation instructions to get started with MongoDB.
+3. Turn on MongoDB Server. [Documentation instructions]([https://www.mongodb.com/basics/get-started]).
 4. Run the project. Make sure to execute this command in the project root directoty.
 
    ```bash
