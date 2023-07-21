@@ -41,7 +41,7 @@ In order to execute the application the following steps are necessary:
    DB_CONNECTION="database conexion string goes here"
    ```
 
-3. Turn on MongoDB Server. ¨[Documentation](https://https://www.mongodb.com/basics/get-started).
+3. Turn on MongoDB Server. [Documentation](https://www.mongodb.com/basics/get-started).
 4. Run the project. Make sure to execute this command in the project root directoty.
 
    ```bash
